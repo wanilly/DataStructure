@@ -25,7 +25,7 @@
         Variable initialization: initial value in allocation, "constant" declartion.
         
    ##### Operator precedence
-   <span style="color:Red">Unary operators</span> > binary operators
+   <span style="color:Yello">Unary operators</span> > binary operators
         
         *, /, %      >       +, -
         >, <, >=, <=      >       ==, !=
@@ -34,23 +34,77 @@
         
    ##### Type conversion
          each other data type of calculate: 유효숫자가 많은 쪽으로 반환하여 일치시킴
+         
          bool type (automatically transfer Integer 0, 1)
+         
          white space and () use freely: readablilty 극대화
          
         
    ##### Program standard control struture
          
          별도의 control statement 지정이 없으면 쓰여진 순서대로 수행
-         
+        
          Branching mechanism(selection statements): if-else statement, switch statement
          
          Loops: while, for statement
          
          break, continue possible❤️
          
-         
-         
+  ## Structure and Class
+   #### Structure 
+        Declaration(선언): name 지정과 구조 정의, 변수 선언하는 것 C와 같다.
+        
+        맴버 지정연산자('.', '->'): 
+        
+        맴버 함수도 정의 할 수 있으며, 'struct'라는 keyword 없이 추가 변수 지정 가능(C는 구조체를 type name처럼 사용 불가)
+        
+   #### Class 
+        OPP(Object Oriented Programming) basic
+        Memeber data and Menmber function: Attributes(data members, Behaviors(member functions)
+        Membe access specifiers: 
+              1) public: class 외부에서도 access가능 
+              
+              2) private: member or friend function에서만 access가능(default)
+              
+              3) protected: inheritance 가능하 private
+              
+              
+  ## String
+        null terminated strings(\0까지 유효):
+          1) array of characters terminated with '\0' char
+          2) #include <cstring>
+          3) string libraries possible
+            cin: 뛰어쓰기 기준으로 입력
+            cout: string(null까지) 출력
+            
+             
+       string class:
+          1) #include <string>
+          2) 연산자: '='(assignment), '+'(concatentation), ==, !=(equality test)
+          3) [](subscripting), <<, >>(stream I/O),
+          
+          
+          (consistency)하나의 고유한 data type으로 string 다루며 (convenience) 표준 operator 사용한 연산
+          (Dynamic Length)를 효과적으로 다루 있으며 기조 C-string 상호 연산가능...
+          
+   ##### C-string 함수
+      정리하여 추가할 예정🤩 
+  
+  ## Recursion 예제 구현하기
+    Recursion은 computer science에서 알아야하는 매커니즘이다. 정의하는 굉장히 중요하다 영어로 정의하면 다음과 같다. 
+    
+    Recursion means "defining a problem in terms of itself". This can be a very powerful tool in writing algorithms.
+    Recursion comes directly from Mathematics, where there are many examples of expressions written in terms of themselves. 
+    For example, the Fibonacci sequence is defined as: F(i) = F(i-1) + F(i-2)
+    
+    EX1) 1-n까지 정수들의 합
+   ![image](https://user-images.githubusercontent.com/49769190/137912637-9cee4f26-80e8-4215-a3e9-333957e9f9ad.png)
+   ![image](https://user-images.githubusercontent.com/49769190/137915137-a9d11104-f96f-4f56-9299-0f776deb06f1.png)
    
+    EX2) 1-n까지 홀수들의 합
+   ![image](https://user-images.githubusercontent.com/49769190/137928829-89f3132a-6cb8-4833-95f5-2a730c7d46bf.png)
+   ![image](https://user-images.githubusercontent.com/49769190/137928353-207312e5-a2bc-403e-a990-0bc400a52261.png)
+
   ## 포인터(pointer)
     메모리의 주소값을 담고 있는 변수 or 상수
    ##### * 주소 값: 메모리 저장소 위치를 나타내는 값 (1 byte)
