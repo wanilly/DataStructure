@@ -16,6 +16,7 @@
         2) Pop: stack으로부터 원소 가져옴
         
    Stack으로부터 원소를 pop하면 그 원소가 가장 마지막에 넣은 원소임을 보장
+   
   ![image](https://user-images.githubusercontent.com/49769190/137844390-ad040a84-26c3-4e6c-ac3e-1bba6553f90e.png)
   
   구현 형식: Top위치가 중요!👍👍 맨 마지막에 넣은 위치를 저장(-1로 초기화) 
@@ -78,5 +79,5 @@
    Edge(가장 긴 노드간 연결) Heigh(가장 긴 루트 경로 길이) degree of a node(각 노드의 자식노드 개수) degree of tree(트리 최대 차수)
    Leaf(terminal node)-(자식이 없는 노드: degree 0) Internal node(degree > 0) ancestors(자신과 root상 path 존재 노드)
 
-   Binary Tree:
-    
+   Binary Tree(이진트리): 모든 노드 차수가 최대 2인 형태
+   
